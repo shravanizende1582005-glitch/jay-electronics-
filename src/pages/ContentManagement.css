@@ -1,0 +1,258 @@
+.content-manager {
+  display: grid;
+  gap: 18px;
+}
+
+.content-manager-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.content-manager-header h2 {
+  margin: 0 0 5px;
+  color: #071526;
+  font-size: 20px;
+}
+
+.content-manager-header p {
+  margin: 0;
+  color: #71808d;
+  font-size: 13px;
+}
+
+.content-manager-header > span {
+  color: #53636d;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.content-manager-form,
+.content-manager-list {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e4e9ed;
+  border-radius: 10px;
+}
+
+.content-manager-form label {
+  display: grid;
+  gap: 6px;
+  color: #344854;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.content-manager-form label span {
+  display: inline;
+  color: #81909a;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.content-manager-form h3 {
+  margin: 0;
+  color: #071526;
+  font-size: 15px;
+}
+
+.content-manager-form input,
+.content-manager-form select,
+.content-manager-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid #d9e1e6;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #263b46;
+  font: inherit;
+  font-size: 13px;
+}
+
+.content-manager-form textarea {
+  resize: vertical;
+}
+
+.content-manager-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.content-manager-form-row--footer {
+  grid-template-columns: minmax(140px, 0.8fr) minmax(180px, 1fr) minmax(220px, 1.3fr);
+}
+
+.content-manager-submit {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #1288c5;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content-manager-submit:disabled,
+.content-manager-delete:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.content-manager-list {
+  gap: 0;
+  padding: 0 18px;
+}
+
+.content-manager-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.content-manager-item:last-child {
+  border-bottom: 0;
+}
+
+.content-manager-item > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.content-manager-item > .content-manager-item-actions {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 7px;
+  grid-template-columns: none;
+}
+
+.content-manager-item strong {
+  overflow-wrap: anywhere;
+  color: #263b46;
+  font-size: 13px;
+}
+
+.content-manager-item span,
+.content-manager-empty {
+  color: #81909a;
+  font-size: 12px;
+}
+
+.content-manager-delete {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #f1d4d4;
+  border-radius: 6px;
+  background: #fff8f8;
+  color: #b33b3b;
+  cursor: pointer;
+}
+
+.content-manager-edit {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d8e3e8;
+  border-radius: 6px;
+  background: #f5f9fa;
+  color: #1b7087;
+  cursor: pointer;
+}
+
+.content-manager-edit:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.content-manager-editing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #53636d;
+  font-size: 12px;
+}
+
+.content-manager-editing button {
+  border: 0;
+  background: transparent;
+  color: #1177a8;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.content-manager-message {
+  margin: 0;
+  padding: 11px 13px;
+  border-radius: 6px;
+  background: #edf8f1;
+  color: #236b3b;
+  font-size: 13px;
+}
+
+.content-manager-message.is-error {
+  background: #fff1f0;
+  color: #a33025;
+}
+
+.content-manager-empty {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.content-manager-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: #71808d;
+  font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+  .content-manager-form-row--footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .content-manager-form-row--footer label:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-manager-header {
+    flex-direction: column;
+  }
+
+  .content-manager-form,
+  .content-manager-list {
+    padding: 15px;
+  }
+
+  .content-manager-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .content-manager-form-row--footer {
+    grid-template-columns: 1fr;
+  }
+}

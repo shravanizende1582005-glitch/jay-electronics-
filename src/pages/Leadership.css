@@ -1,0 +1,132 @@
+.leadership-page {
+  background: #f7f8fa;
+}
+
+.leadership-hero {
+  padding: 100px 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,21,38,.96),
+      rgba(7,21,38,.7)
+    ),
+    url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1800&q=80")
+    center/cover;
+}
+
+.leadership-hero span,
+.leader-message > div:last-child > span {
+  color: #d99617;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.leadership-hero h1 {
+  color: #fff;
+  font-size: 60px;
+  margin: 15px 0;
+  font-weight: 800;
+}
+
+.leadership-hero p {
+  color: rgba(255,255,255,.8);
+  font-size: 18px;
+}
+
+.leadership-content {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.leader-message {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 35px;
+  padding: 45px;
+  background: #f7f8fa;
+  border-radius: 16px;
+  border: 1px solid #e5e9ee;
+}
+
+.leader-icon {
+  width: 85px;
+  height: 85px;
+  background: #071526;
+  color: #d99617;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leader-message h2 {
+  color: #071526;
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.leader-message p {
+  color: #687386;
+  line-height: 1.8;
+}
+
+.leader-message strong {
+  color: #071526;
+  display: block;
+  margin-top: 20px;
+}
+
+.leadership-pillars {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.leadership-pillars > div {
+  border: 1px solid #e5e9ee;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.leadership-pillars svg {
+  color: #d99617;
+}
+
+.leadership-pillars h3 {
+  color: #071526;
+}
+
+.leadership-pillars p {
+  color: #6d7786;
+  line-height: 1.7;
+}
+
+.leadership-next {
+  margin-top: 35px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d99617;
+  color: #071526;
+  padding: 13px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media(max-width:700px) {
+  .leader-message {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .leadership-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-hero h1 {
+    font-size: 44px;
+  }
+}

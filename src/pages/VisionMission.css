@@ -1,0 +1,132 @@
+.vision-page {
+  background: #f7f8fa;
+}
+
+.vision-hero {
+  padding: 100px 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,21,38,.95),
+      rgba(7,21,38,.7)
+    ),
+    url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1800&q=80")
+    center/cover;
+}
+
+.vision-hero span,
+.vision-card > span {
+  color: #d99617;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.vision-hero h1 {
+  color: #fff;
+  font-size: 60px;
+  margin: 15px 0;
+  font-weight: 800;
+}
+
+.vision-hero p {
+  color: rgba(255,255,255,.8);
+  font-size: 18px;
+}
+
+.vision-content {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.vision-card {
+  padding: 38px;
+  border: 1px solid #e5e9ee;
+  border-radius: 16px;
+  background: #f9fafb;
+}
+
+.vision-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #071526;
+  color: #d99617;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.vision-card h2 {
+  color: #071526;
+  font-size: 28px;
+  margin: 12px 0;
+}
+
+.vision-card p {
+  color: #687386;
+  line-height: 1.8;
+}
+
+.mission-points {
+  margin-top: 70px;
+}
+
+.mission-points h2 {
+  color: #071526;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.mission-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid #e5e9ee;
+  border-radius: 9px;
+  color: #465365;
+}
+
+.mission-point svg {
+  color: #d99617;
+  flex-shrink: 0;
+}
+
+.vision-next {
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d99617;
+  color: #071526;
+  padding: 13px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media(max-width:700px) {
+  .vision-grid,
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-hero h1 {
+    font-size: 44px;
+  }
+}

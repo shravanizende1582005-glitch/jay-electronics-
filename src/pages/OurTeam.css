@@ -1,0 +1,143 @@
+.team-page {
+  background: #f7f8fa;
+}
+
+.team-hero {
+  padding: 100px 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,21,38,.95),
+      rgba(7,21,38,.7)
+    ),
+    url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=80")
+    center/cover;
+}
+
+.team-hero span,
+.team-intro span {
+  color: #d99617;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.team-hero h1 {
+  color: #fff;
+  font-size: 60px;
+  margin: 15px 0;
+  font-weight: 800;
+}
+
+.team-hero p {
+  color: rgba(255,255,255,.8);
+  font-size: 18px;
+}
+
+.team-content {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.team-intro {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.team-intro h2 {
+  color: #071526;
+  font-size: 42px;
+  margin: 12px 0;
+}
+
+.team-intro p {
+  color: #6d7786;
+  line-height: 1.8;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
+
+.team-card {
+  padding: 30px;
+  border: 1px solid #e4e9ee;
+  border-radius: 14px;
+  transition: .3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(7,21,38,.08);
+}
+
+.team-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 11px;
+  background: rgba(217,150,23,.12);
+  color: #c78508;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card h3 {
+  color: #071526;
+  margin: 18px 0 9px;
+}
+
+.team-card p {
+  color: #6d7786;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.team-bottom {
+  margin-top: 55px;
+  padding: 45px;
+  text-align: center;
+  background: #071526;
+  border-radius: 15px;
+}
+
+.team-bottom h2 {
+  color: #fff;
+  font-size: 34px;
+}
+
+.team-bottom p {
+  color: rgba(255,255,255,.7);
+}
+
+.team-bottom a {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d99617;
+  color: #071526;
+  padding: 13px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media(max-width:850px) {
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-hero h1 {
+    font-size: 44px;
+  }
+}

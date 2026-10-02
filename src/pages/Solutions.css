@@ -1,0 +1,166 @@
+.solutions-page {
+  color: #071526;
+}
+
+/* HERO */
+
+.solutions-hero {
+  background: #071526;
+  color: white;
+  padding: 110px 20px;
+}
+
+.solutions-hero span,
+.solutions-heading span {
+  color: #e5a11b;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.solutions-hero h1 {
+  font-size: 54px;
+  line-height: 1.15;
+  margin: 18px 0;
+  font-weight: 800;
+}
+
+.solutions-hero p {
+  max-width: 720px;
+  color: #c5ced8;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* SERVICES */
+
+.solutions-section {
+  padding: 90px 20px;
+  background: #f7f8fa;
+}
+
+.solutions-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 55px;
+}
+
+.solutions-heading h2 {
+  font-size: 40px;
+  margin: 12px 0;
+}
+
+.solutions-heading p {
+  color: #697586;
+  line-height: 1.7;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.solution-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e3e7eb;
+  transition: 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(7, 21, 38, 0.12);
+}
+
+.solution-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.solution-content {
+  padding: 28px;
+}
+
+.solution-content h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.solution-content p {
+  color: #6d7885;
+  line-height: 1.7;
+  font-size: 14px;
+  min-height: 75px;
+}
+
+.solution-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #071526;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.solution-link:hover {
+  color: #d99617;
+}
+
+/* CTA */
+
+.solutions-cta {
+  background: #071526;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.solutions-cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.solutions-cta p {
+  color: #c5ced8;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.solutions-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: #d99617;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-hero h1 {
+    font-size: 38px;
+  }
+
+  .solutions-heading h2 {
+    font-size: 32px;
+  }
+}
